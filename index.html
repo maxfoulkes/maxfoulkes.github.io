@@ -4,19 +4,14 @@
         <title>Mr Foulkes Maths</title>
         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
         <style> 
-            #date-resources {
-                width: 50%;
-                display: inline-block; 
-                overflow: hidden; 
-                
-            }
-            #Other Resources {
-                width: 50%;
-                display: inline-block; 
-                overflow: hidden; 
-                
-            } 
             
+            #resources-div{
+                display: flex;
+            }
+            #resources-child{
+                flex: 1; 
+            }
+           
         
         </style>
     </head>
@@ -24,8 +19,8 @@
         <h1>Mr Foulkes Maths</h1><br>
         <article id="resources">
             <h2>Resources</h2>
-            <div>
-                <span id="date-resources">
+            <div id = "resources-div">
+                <div id="resources-child">
                     <details>
                         <summary>06/03/2024</summary>
                         <a href="https://passfunctionalskills.co.uk/app/uploads/2021/11/Addition-and-Subtraction-E3.pdf">Entry Level 3 - Addition and Subtraction</a><br>
@@ -83,13 +78,19 @@
                         <a href="https://passfunctionalskills.co.uk/app/uploads/2023/05/Edexcel-Functional-Skills-Maths-Level-1-Past-Paper-4-QP-A.pdf">Functional Skills Past Paper 4 Paper 1 (Non Calc)</a><br>
                         <a href="https://passfunctionalskills.co.uk/app/uploads/2023/05/Edexcel-Functional-Skills-Maths-Level-1-Past-Paper-4-QP-B.pdf">Functional Skills Past Paper 4 Paper 2 (Calc)</a><br>
                     </details>
-                </span>
-                <span id="Other Resources">
+                    <details>
+                        <summary>19/03/2024</summary>
+
+                        <a href="https://www.mathsgenie.co.uk/resources/4-HCF-and-LCM.pdf">HCF LCM Worksheet</a><br>
+                        <a href="https://mathsgenie.co.uk/resources/functions.pdf">Functions Worksheet</a><br>
+                    </details>
+                </div>
+                <div id="resources-child">
                     <details>
                         <summary>Numeracy Guide</summary>
                         <a href="Numeracy Practice Final.pdf">Numeracy guide + practice (PDF)</a><br>
                     </details>
-                </span>
+                </div>
             </div>
         </article>
         
@@ -122,6 +123,9 @@
             <p>This is cooler than coolmathsgames.com!</p>
             <p><cite>–satisfied user</cite></p>
         </blockquote>
-        
+        <div class='parent flex-parent'>
+            <div class='child flex-child'>A</div>
+            <div class='child flex-child'>B</div>
+        </div>
     </body>
 </html>
